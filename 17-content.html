@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded HTML Page</title>
+</head>
+<body>
+    <h2>Framwork Heading</h2>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quasi iste ex commodi praesentium in unde aut adipisci, recusandae maiores dolorem quas soluta illo iure incidunt vero voluptas. Omnis, animi?</p>
+    <script>
+        const parentDocument = window.parent.document;
+        const parentHeading = parentDocument.getElementById('heading')
+        const para = document.getElementById('para')
+
+        para.textContent = para.textContent + parentHeading.textContent;
+    </script>
+</body>
+</html>
