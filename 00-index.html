@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript DOM</title>
-    <style>
-        .dcode{
-            width: 250px;
-            height: 100px;
-            background: purple;
-        }
-        .bold { font-weight: bold; }
-        .red-bg { background: red !important; }
-        .white-txt { color: #fff; }
-        .green-txt { color: #39bba0; }
-        .red-txt { color: red; }
-        .big-font { font-size: 36px; }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript DOM</title>
+        <style>
+            .dcode {
+                width: 250px;
+                height: 100px;
+                background: purple;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .red-bg {
+                background: red !important;
+            }
+            .white-txt {
+                color: #fff;
+            }
+            .green-txt {
+                color: #39bba0;
+            }
+            .red-txt {
+                color: red;
+            }
+            .big-font {
+                font-size: 36px;
+            }
 
-        /* using css in next-element-sibling.js */
-        body{ margin: 0px; padding: 15px;}
-        nav {
-            position: fixed;
-            z-index: 99;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 15px;
-            font-weight: bold;
-            background: red;
-        }
-        
-        /* using css in 10-get-bounding-client-rect.js */
-        .box {
-            box-sizing: border-box;
-            width: 100px;
-            height: 100px;
-            background: #009879;
-            border: 2px solid #000;
-            padding: 5px;
-            transition: all .3s ease;
-        }
-    </style>
-</head>
-<body>
-    <script src="19-element-insert-adjacent-html.js"></script>
-</body>
+            /* using css in next-element-sibling.js */
+            body {
+                margin: 0px;
+                padding: 15px;
+            }
+            nav {
+                position: fixed;
+                z-index: 99;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                font-weight: bold;
+                background: red;
+            }
+
+            /* using css in 10-get-bounding-client-rect.js */
+            .box {
+                box-sizing: border-box;
+                width: 100px;
+                height: 100px;
+                background: #009879;
+                border: 2px solid #000;
+                padding: 5px;
+                transition: all 0.3s ease;
+            }
+
+            /* using css in 26-element-from-point.js */
+            .outer {
+                width: 200px;
+                height: 120px;
+                background: #aaaaaa;
+                padding: 20px;
+            }
+            .inner {
+                width: 80px;
+                height: 80px;
+                background: #009578;
+                border: 2px solid #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="27-element-from-point.js"></script>
+    </body>
 </html>
